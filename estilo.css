@@ -76,6 +76,11 @@ body {
 .logo {
     width: 180px; 
 }
+
+
+
+
+
 /* Responsividade Media Query */
 @media screen and (max-width: 600px) {
     .cabecalho {
@@ -100,6 +105,10 @@ body {
         align-items: center;
     }
 }
+
+
+
+
 
 #destaque {
     color: rgb(0,45,114);
@@ -151,4 +160,57 @@ body {
 #titulo_conteudo_informacoes{
     color: rgb(0,45,114);
     font-size: 14px;
+}
+
+
+
+
+
+.centro {
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+.qr-img {
+    margin-top: 7px;
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.conteudo p {
+    margin: 15px 0;
+}
+
+.titulo-qr {
+    color: rgb(0, 45, 114);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.tutorial-titulo1 {
+    color: rgb(0, 45, 114);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;  
+}
+
+.comentario{
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 20px;  
+}
+.tutorial-texto1, .tutorial-texto2, .tutorial-texto3, .tutorial-texto4{
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;  
 }
