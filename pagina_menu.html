@@ -6,6 +6,7 @@
     <title>Minha Página</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="intermediario_entre_db_front.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -24,7 +25,7 @@
                         <input type="text" placeholder="Busque por aluno ou projeto" class="search">
                     </td>
                     <td>
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined" onclick="irParaPaginaMapa()">
                             search
                         </span>
                     </td>
