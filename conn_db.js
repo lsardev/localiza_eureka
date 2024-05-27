@@ -51,7 +51,7 @@ app.get('/buscarAluno1', (req, res) => {
 
     console.log(`Buscando dados para o aluno: ${nomeAluno}`);
     
-    const query = "SELECT * FROM dados_eureka WHERE nomeAluno = ?";
+    const query = "SELECT curTrabalho FROM dados_eureka WHERE nomeAluno = ?";
     db.query(query, [nomeAluno], (err, result) => {
         if (err) {
             console.error('Erro ao executar a query:', err);
@@ -61,6 +61,8 @@ app.get('/buscarAluno1', (req, res) => {
         res.json(result);
     });
 });
+
+
 
 app.listen(port, () => {
     console.log('Servidor rodando na porta 3000');
