@@ -28,8 +28,6 @@ db.connect(err => {
     console.log("Connected to database!");
 });
 
-
-// Endpoint para buscar dados do aluno
 app.get('/buscarAluno1', (req, res) => {
     const nomeAluno = req.query.nomeAluno;
     console.log(nomeAluno)
@@ -41,7 +39,7 @@ app.get('/buscarAluno1', (req, res) => {
 
     console.log(`Buscando dados para o aluno: ${nomeAluno}`);
     
-    const query = "SELECT * FROM dados_eureka WHERE nomeAluno = ?";
+    const query = "SELECT tituloTrabalho FROM dados_eureka WHERE nomeAluno = ?";
     db.query(query, [nomeAluno], (err, result) => {
         if (err) {
             console.error('Erro ao executar a query:', err);
@@ -50,10 +48,4 @@ app.get('/buscarAluno1', (req, res) => {
         console.log('Resultado da busca:', result);
         res.json(result);
     });
-});
-
-
-
-app.listen(port, () => {
-    console.log('Servidor rodando na porta 3000');
 });
