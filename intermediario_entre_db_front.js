@@ -64,9 +64,22 @@ async function irParaPaginaMapa() {
 }
 
 function escreverNaDiv(cursoAluno, estandeAluno) {
+
+    if (cursoAluno === 'ADM') {
+        cursoNaDiv = 'Administração';
+    } else if (cursoAluno === 'MC') {
+        cursoNaDiv = 'Engenharia Mecânica';
+    } else if (cursoAluno === 'CA'){
+        cursoNaDiv = 'Eng. de Controle e Automação';
+    } else if (cursoAluno === 'CM'){
+        cursoNaDiv = 'Engenharia de Computação';
+    } else if (cursoAluno === 'CV'){
+        cursoNaDiv = 'Engenharia Cívil';
+    }
+
     const titulo_curso = document.querySelector('#titulo_curso a');
     if (titulo_curso) {
-        titulo_curso.textContent = cursoAluno;
+        titulo_curso.textContent = cursoNaDiv;
     } else {
         console.error('O elemento com a id "titulo_curso" não foi encontrado.');
     }
