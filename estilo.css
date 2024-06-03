@@ -58,7 +58,7 @@ body {
 .rodape {
     background-color: rgb(0,45,114); 
     color: white; 
-    padding: 2px;
+    padding: 1px;
     text-align: center;
     position: fixed;
     left: 0;
@@ -82,7 +82,7 @@ body {
 
 
 /* Responsividade Media Query */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .cabecalho {
         text-align: center;
     }
@@ -103,6 +103,14 @@ body {
         padding: 8px 16px;
         text-align: center;
         align-items: center;
+    }
+
+    #btnHome {
+        font-size: 14px;
+        padding: 8px 16px;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 40px;
     }
 }
 
@@ -146,6 +154,18 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin: auto;
+    text-align: center;
+}
+
+#btnHome {
+    background-color: rgb(0,45,114);
+    color: white;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 60px;
     text-align: center;
 }
 

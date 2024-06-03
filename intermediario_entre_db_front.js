@@ -63,6 +63,35 @@ async function irParaPaginaMapa() {
     }
 }
 
+function irParaPaginaHome(){
+    window.location.href = "pagina_menu.html";
+}
+
+function mudarCorFonte(cursoAluno){
+    const titulo = document.querySelector('#titulo_curso a');
+    const destaque = document.querySelector('#destaque a');
+        
+    if (cursoAluno === 'ADM') {
+        titulo.style.color = 'red';
+        destaque.style.color = 'red';
+    } else if (cursoAluno === 'MC') {
+        titulo.style.color = '#87CEFA';
+        destaque.style.color = '#87CEFA';
+    } else if (cursoAluno === 'CA'){
+        titulo.style.color = '#F17EA1';
+        destaque.style.color = '#F17EA1';
+    } else if (cursoAluno === 'CM'){
+        titulo.style.color = '#B34DB2';
+        destaque.style.color = '#B34DB2';
+    } else if (cursoAluno === 'CV'){
+        titulo.style.color = '#7F7F7F';
+        destaque.style.color = '#7F7F7F';
+    }
+
+
+   
+}
+
 function escreverNaDiv(cursoAluno, estandeAluno) {
 
     if (cursoAluno === 'ADM') {
@@ -142,7 +171,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const estande = localStorage.getItem('estandeAluno');
     if (curso && estande) {
         escreverNaDiv(curso, estande);
-        trocarImagem(curso)
+        trocarImagem(curso);
+        mudarCorFonte(curso);
     } else {
         console.log('Nenhum curso ou estande foi encontrado no localStorage.');
     }
