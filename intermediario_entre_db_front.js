@@ -86,6 +86,18 @@ function mudarCorFonte(cursoAluno){
     } else if (cursoAluno === 'CV'){
         titulo.style.color = '#7F7F7F';
         destaque.style.color = '#7F7F7F';
+    } else if (cursoAluno === 'DSG'){
+        titulo.style.color = '#B34DB2';
+        destaque.style.color = '#B34DB2';
+    } else if (cursoAluno === 'PM'){
+        titulo.style.color = '#FFD700';
+        destaque.style.color = '#FFD700';
+    } else if (cursoAluno === 'QM'){
+        titulo.style.color = '#90EE90';
+        destaque.style.color = '#90EE90';
+    } else if (cursoAluno === 'AL'){
+        titulo.style.color = '#006400';
+        destaque.style.color = '#006400'
     }
 
 
@@ -104,6 +116,14 @@ function escreverNaDiv(cursoAluno, estandeAluno) {
         cursoNaDiv = 'Engenharia de Computação';
     } else if (cursoAluno === 'CV'){
         cursoNaDiv = 'Engenharia Cívil';
+    } else if (cursoAluno === 'DSG'){
+        cursoNaDiv = 'Design';
+    } else if (cursoAluno === 'PM'){
+        cursoNaDiv = 'Engenharia de Produção';
+    } else if (cursoAluno === 'QM'){
+        cursoNaDiv = 'Engenharia Química';
+    } else if (cursoAluno === 'AL'){
+        cursoNaDiv = 'Engenharia de Alimentos'
     }
 
     const titulo_curso = document.querySelector('#titulo_curso a');
@@ -155,6 +175,14 @@ function trocarImagem(cursoAluno) {
         elementoMapa.src = 'mapa_cm.png';
     } else if (cursoAluno === 'CV'){
         elementoMapa.src = 'mapa_cv.png'
+    } else if (cursoAluno === 'DSG'){
+        elementoMapa.src = 'mapa_dsg.png'
+    } else if (cursoAluno === 'PM'){
+        elementoMapa.src = 'mapa_pm.png'
+    } else if (cursoAluno === 'QM'){
+        elementoMapa.src = 'mapa_qm.png'
+    } else if (cursoAluno === 'AL'){
+        elementoMapa.src = 'mapa_al.png'
     }
 }
 
